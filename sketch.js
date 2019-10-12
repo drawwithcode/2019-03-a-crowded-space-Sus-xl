@@ -59,7 +59,7 @@ function Ball(_x, _y, _diameter) {
   this.x = _x;
   this.y = _y;
   this.color = 'red';
-  this.speed1 = 2;
+  this.speed1 = 30;
   this.speed2 = 2;
 
   var yDir = 1;
@@ -70,7 +70,6 @@ function Ball(_x, _y, _diameter) {
     //speed
     this.x += this.speed1 * xDir;
     this.y += this.speed2 * yDir;
-
 
     //directions
     if (this.y > height || this.y < 0) {
